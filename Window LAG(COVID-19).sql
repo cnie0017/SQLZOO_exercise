@@ -21,7 +21,7 @@ ORDER BY whn
 
 
 4. The data gathered are necessarily estimates and are inaccurate. However by taking a longer time span we can mitigate some of the effects.
-You can filter the data to view only Monday's figures WHERE WEEKDAY(whn) = 0.
+You can filter the data to view only Monday''s figures WHERE WEEKDAY() = 0.
 Show the number of new cases in Italy for each week - show Monday only.
 
 SELECT name, DATE_FORMAT(whn,'%Y-%m-%d') as date, 
@@ -75,7 +75,7 @@ ORDER BY population DESC
 
 
 8.For each country that has had at lEast(typo lol) 1000 new cases in a single day, show the date of the peak number of new cases.
-********NOTE********This will give you all the rows shown in the correct answer, but the answer's order is strange since on 2020-4-10, Portugal with 1516 is put before Ireland 1515, with US in-between. 
+********NOTE********This will give you all the rows shown in the correct answer, but the answer''s order is strange since on 2020-4-10, Portugal with 1516 is put before Ireland 1515, with US in-between. 
 
 
 SELECT b.name, b.date, b.new
